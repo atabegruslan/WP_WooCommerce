@@ -94,6 +94,8 @@ https://templatic.com/wp/wordpress-subscription-plugins-woocommerce-subscription
 
 https://www.webtoffee.com/woocommerce-subscription-stripe-payment-gateway/
 
+https://woocommerce.com/products/woocommerce-subscriptions/
+
 # Notes
 
 Get custom field
