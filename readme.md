@@ -64,6 +64,10 @@ https://www.businessbloomer.com/woocommerce-visual-hook-guide-checkout-page/
 
 https://docs.woocommerce.com/document/hook-filter-reference/
 
+## Language
+
+https://docs.woocommerce.com/document/woocommerce-localization/
+
 # Paypal
 
 https://wordpress.org/plugins/wp-paypal/
@@ -82,13 +86,15 @@ https://www.youtube.com/watch?v=Z-tGVDfzL9g
 
 https://www.youtube.com/watch?v=lQUI2R7XbiU
 
-https://www.youtube.com/watch?v=rQEWYLdMSIQ
+https://www.youtube.com/watch?v=mI_-1tbIXQI
 
 ## Stripe Subscription plugins
 
 https://templatic.com/wp/wordpress-subscription-plugins-woocommerce-subscription-alternatives/
 
 https://www.webtoffee.com/woocommerce-subscription-stripe-payment-gateway/
+
+https://woocommerce.com/products/woocommerce-subscriptions/
 
 # Notes
 
