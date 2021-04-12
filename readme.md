@@ -96,6 +96,18 @@ https://www.webtoffee.com/woocommerce-subscription-stripe-payment-gateway/
 
 https://woocommerce.com/products/woocommerce-subscriptions/
 
+## Override Email
+
+Override
+
+`wp-content/plugins/woocommerce/templates/emails/customer-invoice.php`
+
+with 
+
+`wp-content/themes/{yourtheme}/woocommerce/emails/customer-invoice.php`
+
+If you are overriding a plugin's template, and that plugin is built upon WooCommerce (eg `woocommerce-subscriptions`), then your override would be `.../{yourtheme}/woocommerce/...` not `.../{yourtheme}/woocommerce-subscriptions/...`.
+
 # Notes
 
 Get custom field
