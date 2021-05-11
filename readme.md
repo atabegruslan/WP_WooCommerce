@@ -16,42 +16,6 @@ https://docs.woocommerce.com/document/stripe/
 
 4. Create new product and purchase
 
-# Stripe API: https://stripe.com/docs
-
-Create product and prices: 
-
-- https://stripe.com/docs/api/products/create
-- https://stripe.com/docs/invoicing/prices-guide
-
-https://git.elidev.info/nhanlt/promonco/blob/dev/wp-content/themes/promonco/app/Components/Hooks/Admin/AdminActions.php#L278
-
-When sync to stripe, use this hook: https://developer.wordpress.org/reference/hooks/pre_post_update/
-
-Create subscription payment:
-
-https://stripe.com/docs/billing/invoices/subscription#first-invoice-extra
-    
-https://git.elidev.info/nhanlt/promonco/blob/dev/wp-content/plugins/elinext-stripe-subscription/elinext-stripe-subscription.php#L355
-
-`$response = WC_Stripe_API::request($attachData, $url, 'POST');`
-
-Utilize: `/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php`
-
-```php
-$attachData = [
-                'default_tax_rates' => [
-                    "$tax->id" 
-                ],
-                'customer'          => $customerId,
-                'items'             => [[ 'price' => $stripeSubscriptionPriceId ]], // For subscription
-                'add_invoice_items' => [[ 'price' => $stripeOneTimePriceId ]] // For one-time payment
-            ];
-
-            $url = WC_Stripe_Subscription::_URL_SUBSCRIPTION;//'subscriptions'
-            
-            $response = WC_Stripe_API::request($attachData, $url, 'POST');
-```
-
 # WooCommerce
 
 https://wordpress.stackexchange.com/questions/307/where-can-i-find-a-list-of-wordpress-hooks
@@ -87,6 +51,44 @@ https://www.youtube.com/watch?v=Z-tGVDfzL9g
 https://www.youtube.com/watch?v=lQUI2R7XbiU
 
 https://www.youtube.com/watch?v=mI_-1tbIXQI
+
+## Stripe API: https://stripe.com/docs
+
+For Stripe API with plain PHP, see: https://github.com/Ruslan-Aliyev/Stripe-API-Plain-PHP
+
+Create product and prices: 
+
+- https://stripe.com/docs/api/products/create
+- https://stripe.com/docs/invoicing/prices-guide
+
+https://git.elidev.info/nhanlt/promonco/blob/dev/wp-content/themes/promonco/app/Components/Hooks/Admin/AdminActions.php#L278
+
+When sync to stripe, use this hook: https://developer.wordpress.org/reference/hooks/pre_post_update/
+
+Create subscription payment:
+
+https://stripe.com/docs/billing/invoices/subscription#first-invoice-extra
+    
+https://git.elidev.info/nhanlt/promonco/blob/dev/wp-content/plugins/elinext-stripe-subscription/elinext-stripe-subscription.php#L355
+
+`$response = WC_Stripe_API::request($attachData, $url, 'POST');`
+
+Utilize: `/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php`
+
+```php
+$attachData = [
+                'default_tax_rates' => [
+                    "$tax->id" 
+                ],
+                'customer'          => $customerId,
+                'items'             => [[ 'price' => $stripeSubscriptionPriceId ]], // For subscription
+                'add_invoice_items' => [[ 'price' => $stripeOneTimePriceId ]] // For one-time payment
+            ];
+
+            $url = WC_Stripe_Subscription::_URL_SUBSCRIPTION;//'subscriptions'
+            
+            $response = WC_Stripe_API::request($attachData, $url, 'POST');
+```
 
 ## Stripe Subscription plugins
 
