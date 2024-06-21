@@ -12,8 +12,6 @@ https://www.youtube.com/watch?v=lL15EarPKbE
 
 https://docs.woocommerce.com/document/stripe/
 
-![]()
-
 4. Create new product and purchase
 
 # WooCommerce
@@ -28,17 +26,23 @@ https://www.businessbloomer.com/woocommerce-visual-hook-guide-checkout-page/
 
 https://docs.woocommerce.com/document/hook-filter-reference/
 
+https://webappick.com/woocommerce-support-forum
+
+https://woocommerce.com/community
+
 ## Language
 
 https://docs.woocommerce.com/document/woocommerce-localization/
 
 # Paypal
 
-https://wordpress.org/plugins/wp-paypal/
+https://wordpress.org/plugins/wp-paypal
 
-https://www.wpbeginner.com/plugins/10-wordpress-paypal-plugins-for-easily-accepting-payments/
+https://www.wpbeginner.com/plugins/10-wordpress-paypal-plugins-for-easily-accepting-payments
 
-https://www.wpbeaverbuilder.com/best-wordpress-paypal-plugins/
+https://www.wpbeaverbuilder.com/best-wordpress-paypal-plugins
+
+https://woocommerce.com/document/woocommerce-paypal-payments
 
 # Stripe
 
