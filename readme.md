@@ -16,6 +16,8 @@ https://docs.woocommerce.com/document/stripe/
 
 # WooCommerce
 
+Docs: https://woocommerce.com/document/woocommerce-paypal-payments
+
 https://wordpress.stackexchange.com/questions/307/where-can-i-find-a-list-of-wordpress-hooks
 
 https://woocommerce.github.io/code-reference/hooks/hooks.html
